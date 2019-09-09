@@ -58,7 +58,7 @@ Creates an I2C SSD1327 instance.
 ### spi
 // TODO
 
-## writeMonoText(text, font, x = 0, y = 0)
+### writeMonoText(text, font, x = 0, y = 0)
 Writes text to the display at the x/y pixel coordinates. Monospace fonts only.
 
 ### on() off()
