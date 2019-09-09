@@ -4,7 +4,6 @@
 //  - Waveshare 1.5inch OLED Display Module 128x128 Pixels 16-bit Grey Level
 //  - https://www.amazon.com/gp/product/B079NNZ9V1
 
-const i2c = require('i2c-bus-promise')
 const _debug = require('debug')
 const DoubleWidthPixelMatrix = require('./matrix.js');
 const hex = (v) => v.toString(16).padStart(2, '0')
@@ -241,7 +240,7 @@ const SSD1327 = (write) => {
 module.exports = {
   i2c: (bus, address) => {
     if (!bus._bus) {
-      bus = i2c.busWrapper(bus)
+      return Promise.reject(new Error('i2c-bus-promise not found'))
     }
 
     return SSD1327((data, length = data.length, dbg = true) => {
