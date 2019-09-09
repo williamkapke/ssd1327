@@ -1,0 +1,15 @@
+{
+  "name": "ssd1327",
+  "version": "1.0.0",
+  "description": "It talks to a ssd1327 device",
+  "main": "ssd1327.js",
+  "author": "Wiliam Kapke",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/williamkapke/ssd1327.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
+}
