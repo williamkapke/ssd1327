@@ -238,7 +238,7 @@ const SSD1327 = (write) => {
 
 
 module.exports = {
-  i2c: (bus, address) => {
+  I2C: (bus, address) => {
     if (!bus._bus) {
       return Promise.reject(new Error('i2c-bus-promise not found'))
     }
@@ -254,7 +254,7 @@ module.exports = {
   },
 
   //TODO - sorry :(
-  spi: () => {
+  SPI: () => {
     throw new Error('Not Implemented')
   }
 }

@@ -161,7 +161,7 @@ class DoubleWidthPixelMatrix {
         const sourceSeg = startSeg + seg
         const sourceIdx = (sourceRow * this.segWidth) + sourceSeg
         if (sourceIdx > target.length) {
-          console.error('out of range index requested:', name, sourceIdx)
+          //console.error('out of range index requested:', name, sourceIdx)
         }
         return target[sourceIdx]
       }
@@ -171,6 +171,5 @@ class DoubleWidthPixelMatrix {
 }
 const hex = (x) => x.toString(16).padStart(2,'0')
 const bin = (x) => x.toString(2).padStart(8,'0')
-// const sleep = (t) => new Promise((resolve) => setTimeout(resolve, t));
 
 module.exports = DoubleWidthPixelMatrix
