@@ -1,0 +1,4 @@
+.idea
+fonts/*
+!fonts/FreeMono24pt7b.js
+scratch.js

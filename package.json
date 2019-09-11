@@ -1,6 +1,6 @@
 {
   "name": "ssd1327",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "It talks to a ssd1327 device",
   "main": "ssd1327.js",
   "author": "Wiliam Kapke",
